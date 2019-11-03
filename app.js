@@ -41,7 +41,7 @@ const bodyParser = require('body-parser');
         })    
         
     //CRIAR TABELA (*RODAR NA PRIMEIRA VEZ*)   
-        //Localweather.sync({force: true})
+        Localweather.sync({force: true})
     
     //Exportando a tabela
         module.exports = {
