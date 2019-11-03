@@ -2,7 +2,7 @@
 
 > Aplicação web que fornece informações meteorológicas através da API do OpenWeatherMap 
 
-### 🏠 [Homepage] | localhost:8081 |
+### 🏠 Homepage ( localhost:8081 )
 
 ## Install
 
