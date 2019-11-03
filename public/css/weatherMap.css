@@ -99,3 +99,14 @@ h2 {
     list-style-type: none;
     font-size: 1.2em;
 }
+/* -------------- */
+.marquee {
+    width: 350px;
+    margin: 0 auto;
+    background:yellow;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:blue;
+    font-size:18px;
+ }

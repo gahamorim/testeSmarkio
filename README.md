@@ -45,9 +45,11 @@ OBSERVAÇÃO: Rodar a aplicação web pela primeira vez para que a tabela seja c
 ## CONSIDERATIONS
 
 ```sh
-Pelo código é possível obter os valores em que foram feitas as buscas por Cidades, mas não obtive êxito a tempo de colocá-lo a tempo no histórico de buscas.
+Ao fazer a busca pela cidade, a aplicação web obtém êxito em trazer as informações pela API. A questão é que não foi possível inserir a função de
+tempo em que a busca foi feita, apesar de ter realizado várias tentativas. 
+É possivel observar, recarregando a página, que adicionei as informações do banco de dados dinâmicamente em um div no html abaixo dos painéis. Lá se encontra o updatedAt, que representa a hora em que a busca foi feita (tentativa mais próxima).
 
-Quanto ao Top 5, fiquei trabalhando em cima das queries de COUNT no MySQL, mas não obtive êxito em implementá-lo. 
+Quanto ao top 5 das cidades, tentei trabalhar com as queries no MySQL, mas não obtive êxito em implementá-lo.
 ```
 
 ## Author

@@ -29,5 +29,6 @@ $(document).on('keypress',function(e) {
 });
 
 $(document).ready(function() {
-
+    var today = new Date();
+    document.getElementById('dtText').innerHTML=today;
   });

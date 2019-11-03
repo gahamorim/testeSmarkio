@@ -54,15 +54,14 @@ const bodyParser = require('body-parser');
         app.use(express.static(path.join(__dirname,'public')));
 
     // Rotas
-
+        //Renderizar a view + Busca no BD
         app.get('/', function(req,res){
-            Localweather.findAll().then(cidades => {
-                res.render('index');
-                console.log("Todas as cidades:", JSON.stringify(cidades, null, 4));
-
+            Localweather.findAll().then(function(buscas){
+                res.render('index', {buscas: buscas});
             })
         })
 
+        //Buscar as informações do Método POST
         app.post('/', function(req,res){
             Localweather.create({
                 cidade: req.body.cidade,
@@ -74,15 +73,3 @@ const bodyParser = require('body-parser');
     app.listen(8081, function(){
         console.log("Servidor rodando!");
     })
-
-    /*
-    User.findAll().then(users => {
-  console.log("All users:", JSON.stringify(users, null, 4));
-});
-    */
-
-    /*
-                Localweather.findAll().then(function(buscas){
-                res.render('index', {buscas: buscas});
-            })
-    */

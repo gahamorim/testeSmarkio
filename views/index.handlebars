@@ -8,7 +8,7 @@
         </div>
         <div class="cityInfo">
             <h2 class="city-name">São Francisco, EUA</h2> <!-- Nome, pela API -->
-            <sub class="city-weather">Céu Limpo</sub>
+            <sub class="city-weather">Céu Limpo</sub> <!-- Clima, pela API -->
         </div>
         <div class="cityTemp">
             <div>
@@ -20,10 +20,10 @@
         </div>
         <div class="cityHumidity">
             <div>
-                <p class="city-humidity">48%</p>
+                <p class="city-humidity">48%</p> <!-- Umidade, pela API -->
             </div>
             <div>
-                <img src="https://image.flaticon.com/icons/svg/727/727790.svg" style="width: 15%"></img>
+                <img src="https://image.flaticon.com/icons/svg/727/727790.svg" style="width: 15%"></img> <!-- Ícone do clima, pela API -->
             </div>
         </div>
     </div>
@@ -50,9 +50,20 @@
 
     </div>
 
+    <div class="line"> </div>
+    <div class="line"> </div>
+    
     <div>
+        <br />
+        <h2>Informações do banco de dados:</h2>
         {{#each buscas}}
-            <h1>{{cidade}}</h1>
+            <h3>{{cidade}}, {{temperatura}}°C, {{clima}}, {{updatedAt}} </h3>
         {{/each}}
+    </div>
+
+    <div>
+        <p>
+            <span id="dtText"></span>
+        </p>
     </div>
 </div>
