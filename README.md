@@ -2,9 +2,7 @@
 
 > Aplicação web que fornece informações meteorológicas através da API do OpenWeatherMap 
 
-### 🏠 [Homepage](localhost:8081)
-
-### ✨ [Demo](localhost:8081)
+### 🏠 [Homepage] | localhost:8081 |
 
 ## Install
 
@@ -47,7 +45,9 @@ OBSERVAÇÃO: Rodar a aplicação web pela primeira vez para que a tabela seja c
 ## CONSIDERATIONS
 
 ```sh
-alo
+Pelo código é possível obter os valores em que foram feitas as buscas por Cidades, mas não obtive êxito a tempo de colocá-lo a tempo no histórico de buscas.
+
+Quanto ao Top 5, fiquei trabalhando em cima das queries de COUNT no MySQL, mas não obtive êxito em implementá-lo. 
 ```
 
 ## Author
